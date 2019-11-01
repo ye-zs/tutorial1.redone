@@ -15,7 +15,7 @@
     height: 3px;
     //top 0 bottom zero right left
     margin: 0 0 5px 0;
-    background: magenta;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -129,7 +129,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 

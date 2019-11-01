@@ -30,6 +30,16 @@ $background-opacity: 0.85;
   }
 }
 
+// Sest Text Color
+// to return, must have a funciton, not mixin
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return purple;
+  } @else {
+    @return violet;
+  }
+}
+
 //  Media Query Mixins
 @mixin mediaSm {
   // any css in here applies at 500px or less
