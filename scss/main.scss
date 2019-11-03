@@ -126,14 +126,45 @@ main {
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); //3 sections across
 
+  // .item {
+  //   height: auto;
+  // }
+
   img {
     width: 100%; //100% of its container
+    //height: 70.5%;
     border: 3px #fff solid;
 
     &:hover {
       opacity: 0.5;
       border-color: $secondary-color;
       @include easeOut;
+    }
+  }
+}
+
+// Contact Page
+.boxes {
+  display: flex; //flexin
+  flex-wrap: wrap; //when too big, it'll go on next line
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+
+  div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    @include easeOut;
+
+    &:hover {
+      padding: 1rem 2rem; //shrinks it
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+      span {
+        color: set-text-color($secondary-color);
+      }
     }
   }
 }
